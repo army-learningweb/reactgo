@@ -1,12 +1,12 @@
 const users = [
-    {
-        id: 1,
-        avatar: "",
-        name: "",
-        birthYear: "",
-        live: "",
-        skills: []
-    },
+    // {
+    //     id: 1,
+    //     avatar: "",
+    //     name: "",
+    //     birthYear: "",
+    //     live: "",
+    //     skills: []
+    // },
     {
         id: 2,
         avatar: "",

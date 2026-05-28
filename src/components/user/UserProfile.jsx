@@ -5,9 +5,6 @@ import users from "../../data/user";
 function UserProfile() {
   return (
     <>
-      <h1 className="text-center text-4xl font-bold tracking-tight py-5 bg-linear-to-r from-indigo-700 to-indigo-900 bg-clip-text text-transparent">
-        Hire Freelancer now !
-      </h1>
       {users?.length > 0 ? (
         users.map((user) => (
           <div
