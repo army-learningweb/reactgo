@@ -3,6 +3,9 @@ import { getAgeText, getInitials } from "../../utils/user";
 import users from "../../data/user";
 
 function UserProfile() {
+  const handleShowMessage = (name) =>{
+    alert(`Nhắn tin cho ${name}`)
+  }
   return (
     <>
       {users?.length > 0 ? (
@@ -52,7 +55,7 @@ function UserProfile() {
 
               {/* button message */}
               {user.name && (
-                <div>
+                <div onClick={() => handleShowMessage(user.name)}>
                   <div className="flex items-center gap-1 px-2 py-1.5 rounded-md text-gray-600 border border-gray-200 cursor-pointer hover:border-blue-600 hover:bg-blue-600/10 hover:text-blue-600 active:text-blue-800">
                     <MessageCircleMore size={15} />
                     <span className="font-medium text-xs">Message...</span>

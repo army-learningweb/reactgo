@@ -1,5 +1,7 @@
-function Button({onClick, label, size = "md", variant = "primary" }) {
- 
+function Button({ onClick, label, size = "md", variant = "primary" }) {
+  const handleClick = () => {
+    console.log("aaa");
+  };
 
   const sizes = { sm: "text-xs", md: "text-medium", large: "text-xl" };
   const variants = {
@@ -10,7 +12,7 @@ function Button({onClick, label, size = "md", variant = "primary" }) {
   return (
     <>
       <button
-        onClick={(e) => {e.stopPropagation(); onClick('vy')}}
+        onClick={handleClick}
         className={`${sizes[size]} ${variants[variant]} px-3 py-1 texxt-white rounded-sm shadow-sm text-white cursor-pointer`}
       >
         {label}
