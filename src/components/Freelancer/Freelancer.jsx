@@ -25,7 +25,7 @@ export default function Freelancer() {
 
   return (
     <>
-      <BaseLayout title="FREELANCER LIST">
+      <BaseLayout title="FREELANCER LIST BRANCHES">
         <div className="flex flex-col gap-5">
           {/* Tìm kiếm user */}
           <FreelancerSearchBar
